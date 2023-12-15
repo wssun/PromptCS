@@ -113,6 +113,7 @@ For a complete list of all arguments settings, please refer to the 'run.py'.
 To obtain METEOR and ROUGE-L, we need to activate the environment that contains python 2.7
 
     conda activate py27
+    unzip evaluation
     cd evaluation
     python evaluate.py --predict_file_path ../PromptCS/saved_models/test_0.output --ground_truth_file_path ../PromptCS/saved_models/test_0.gold
 
