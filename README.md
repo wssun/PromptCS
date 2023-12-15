@@ -109,6 +109,15 @@ For a complete list of all arguments settings, please refer to the 'run.py'.
     cd PromptCS
     python evaluate.py --predict_file_path ./saved_models/test_0.output --ground_truth_file_path ./saved_models/test_0.gold --SentenceBERT_model_path ../all-MiniLM-L6-v2
 
+### METEOR and ROUGE-L
+To obtain METEOR and ROUGE-L, we need to activate the environment that contains python 2.7
+
+    conda activate py27
+    cd evaluation
+    python evaluate.py --predict_file_path ../PromptCS/saved_models/test_0.output --ground_truth_file_path ../PromptCS/saved_models/test_0.gold
+
+Tip: The path should only contain English characters.
+
 ## Zero-Shot LLMs
     cd zeroshot
     python manual.py --model_name_or_path ../bigcode/starcoderbase-3b --test_filename ../dataset/java/clean_test.jsonl
