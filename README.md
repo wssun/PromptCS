@@ -126,5 +126,5 @@ Tip: The path should only contain English characters.
 We directly leverage the 10 Java examples provided by Ahmed et al. in their GitHub [repository](https://github.com/toufiqueparag/few_shot_code_summarization/tree/main/Java), since we use the same experimental dataset (i.e., the CSN corpus).
 
     cd fewshot
-    python manual.py --model_name_or_path ../bigcode/starcoderbase-3b --test_filename ../dataset/java/clean_test.jsonl
-    python manual_gpt_3.5.py --test_filename ../dataset/java/clean_test.jsonl
+    python fewshot.py --model_name_or_path ../bigcode/starcoderbase-3b --test_filename ../dataset/java/clean_test.jsonl
+    python fewshot_gpt_3.5.py --test_filename ../dataset/java/clean_test.jsonl
