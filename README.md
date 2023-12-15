@@ -81,7 +81,7 @@ For each file, each line in the uncompressed file represents one function. Here 
     cd PromptCS
     CUDA_VISIBLE_DEVICES=0 python run.py --mode PromptCS --prompt_encoder_type lstm --template [0,100] --model_name_or_path ../LLMs/codegen-350m --train_filename ../dataset/java/clean_train.jsonl --dev_filename ../dataset/java/clean_valid.jsonl --test_filename ../dataset/java/clean_test.jsonl --output_dir ./saved_models --train_batch_size 16 --eval_batch_size 16 --learning_rate 5e-5 
 
-This can reproduce our experimental results on a single A800 card.
+This can reproduce our experimental results on a single A800.
 If your device has insufficient GPU memory, or you need multi-GPU training, please check out the DeepSpeed version of training PromptCS
 
 ### Train with DeepSpeed
