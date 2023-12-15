@@ -11,8 +11,9 @@ A Prompt Learning Framework for Source Code Summarization
 
 ## Dataset
 We use the Java, Javascript and Python dataset from the [CodeXGLUE](https://github.com/microsoft/CodeXGLUE/tree/main/Code-Text/code-to-text) code-to-text docstring
-generation task, which is built upon the CodeSearchNet corpus and
-excludes defective data samples. 
+generation task, which is built upon the CodeSearchNet corpus and excludes defective data samples. 
+
+We further process them to obtain two additional fields: 'clean_code' and 'clean_doc'.
 
 ### Download data and preprocess
 
