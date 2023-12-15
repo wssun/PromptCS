@@ -85,7 +85,7 @@ If your device has insufficient GPU memory, or you need multi-GPU training, plea
 
 ### Train with DeepSpeed
 We set the Zero Redundancy Optimizer (ZeRO) to ZeRO-3 and enable the offloading of optimizer computation to CPU.
-However, the experimental results that can be obtained using deepspeed to train promptCS or finetune LLMs is unvalidated.
+However, the experimental results obtained by using DeepSpeed to train PromptCS or fine-tune LLMs have not been validated.
 
     cd PromptCS-DeepSpeed
     deepspeed --num_gpus=2 run.py
